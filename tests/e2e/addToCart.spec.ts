@@ -1,8 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 import { ProductPage } from '../pages/ProductPage';
-import dotenv from 'dotenv';
-dotenv.config();
+
 
 test('User can login and add product to cart', async ({ page }) => {
   const loginPage = new LoginPage(page);

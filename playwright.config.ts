@@ -1,4 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
+import dotenv from 'dotenv';
+dotenv.config();
 
 export default defineConfig({
   testDir: './tests/e2e',
@@ -13,7 +15,7 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     trace: 'on-first-retry',
-    // baseURL: 'https://demo.ecommerce-playground.lambdatest.io/',
+    
     baseURL: 'https://www.saucedemo.com/',
   },
   projects: [
