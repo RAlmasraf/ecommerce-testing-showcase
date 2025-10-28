@@ -4,8 +4,9 @@ A demonstration project for automated testing of e-commerce applications using P
 
 ## Prerequisites
 
-- Node.js (version X.X or higher)
+- Node.js (version 20.18)
 - npm
+- github account https://github.com/RAAlmasraf/ecommerce-testing-showcase
 
 ## Installation
 
