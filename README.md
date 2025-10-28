@@ -15,8 +15,8 @@ npx playwright test
 
 # Pass credentials inline on powershell
 
-$env:USERNAME="standard_user"
->> $env:PASSWORD="secret_sauce"
+$env:USERNAME="USERNAME"
+>> $env:PASSWORD="PASSWORD"
 >> npx playwright test
 
 # Pass credentials inline on bash
