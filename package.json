@@ -1,0 +1,17 @@
+{
+  "name": "ecommerce-testing",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test",
+    "k6": "k6 run performance/k6-load-test.js",
+    "lighthouse": "node performance/lighthouse-test.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "chrome-launcher": "^0.15.0",
+    "dotenv": "^16.3.1",
+    "lighthouse": "^11.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
