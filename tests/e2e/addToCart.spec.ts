@@ -10,7 +10,7 @@ test('User can login and add product to cart', async ({ page }) => {
 
   // Login
   await loginPage.goto();
-  await loginPage.login(process.env.USERNAME!, process.env.PASSWORD!);
+  await loginPage.login(process.env.TEST_USERNAME!, process.env.TEST_PASSWORD!);
 
   // Add to cart
   await productPage.addToCart('sauce-labs-backpack');
@@ -20,6 +20,6 @@ test('User can login and add product to cart', async ({ page }) => {
   await expect(page.locator('.cart_item')).toHaveCount(1);
 
   // Logout
-  await page.click('#react-burger-menu-btn'); // open side menu
-  await page.click('#logout_sidebar_link'); // click logout
+  await page.click('#react-burger-menu-btn');
+  await page.click('#logout_sidebar_link');
 });
