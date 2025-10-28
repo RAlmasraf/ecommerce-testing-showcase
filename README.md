@@ -1,30 +1,56 @@
-# ecommerce-testing-showcase
- demo
+# E-commerce Testing Showcase
 
-# Install dependencies
+A demonstration project for automated testing of e-commerce applications using Playwright.
 
+## Prerequisites
+
+- Node.js (version X.X or higher)
+- npm
+
+## Installation
+
+1. Install project dependencies:
+```bash
 npm ci
+```
 
-# Install dependencies
-
+2. Install Playwright browsers:
+```bash
 npx playwright install --with-deps
+```
 
-# Run the Test
+## Running Tests
 
+### Basic test execution:
+```bash
 npx playwright test
+```
 
-# Pass credentials inline on powershell
+### With credentials:
 
-$env:USERNAME="USERNAME"
->> $env:PASSWORD="PASSWORD"
->> npx playwright test
+**PowerShell:**
+```powershell
+$env:USERNAME="standard_user"
+$env:PASSWORD="secret_sauce"
+npx playwright test
+```
 
-# Pass credentials inline on bash
-
+**Bash/Linux/Mac:**
+```bash
 USERNAME=standard_user PASSWORD=secret_sauce npx playwright test
+```
 
-# Run in headed mode or debug
-
+### Debug modes:
+```bash
+# Run tests in headed mode
 npx playwright test --headed
-npx playwright test --debug
 
+# Run tests in debug mode
+npx playwright test --debug
+```
+
+## Configuration
+
+The tests expect the following environment variables:
+- `USERNAME` - Login username (default: username)
+- `PASSWORD` - Login password (default: password)
